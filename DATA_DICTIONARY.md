@@ -29,7 +29,6 @@ Only matches with `status = completed` and scheduled before the embargo cutoff a
 | country | text | IOC-style 3-letter code |
 | birthday | text | date of birth where known |
 | hand | text | `R`/`L` where known |
-| sackmann_id | text | id in Jeff Sackmann's open datasets (crosswalk); empty = unmapped |
 
 ## points_sample_2026-06.csv
 
