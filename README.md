@@ -1,7 +1,7 @@
 # Tennis Point-by-Point Dataset — ATP, WTA, Challenger, ITF
 
 **Free for non-commercial academic research and teaching.**
-Public sample: [DOI 10.5281/zenodo.22048731](https://doi.org/10.5281/zenodo.22048731) ·
+Public sample: [DOI 10.5281/zenodo.22048730](https://doi.org/10.5281/zenodo.22048730) ·
 Dataset page: [livetennisapi.com/data/academic](https://livetennisapi.com/data/academic) ·
 Full-dataset applications: **research@livetennisapi.com**
 
@@ -69,7 +69,10 @@ required · tell us when you publish.
 ## Citing
 
 > Live Tennis API (2026). *Tennis Point-by-Point Dataset — ATP, WTA, Challenger, ITF*.
-> Zenodo. https://doi.org/10.5281/zenodo.22048731
+> Zenodo. https://doi.org/10.5281/zenodo.22048730
+
+This DOI resolves to the latest version of the sample. See also the
+[corrections to this sample](https://livetennisapi.com/data/corrections).
 
 ```bibtex
 @dataset{livetennisapi_2026_tennis_pbp,
@@ -77,13 +80,13 @@ required · tell us when you publish.
   title     = {Tennis Point-by-Point Dataset --- ATP, WTA, Challenger, ITF},
   year      = 2026,
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.22048731},
-  url       = {https://doi.org/10.5281/zenodo.22048731}
+  doi       = {10.5281/zenodo.22048730},
+  url       = {https://doi.org/10.5281/zenodo.22048730}
 }
 ```
 
 ## License
 
 Documentation and code snippets in this repository: MIT. The dataset itself:
-CC BY-NC 4.0 via [Zenodo](https://doi.org/10.5281/zenodo.22048731) and the
+CC BY-NC 4.0 via [Zenodo](https://doi.org/10.5281/zenodo.22048730) and the
 application process — this repository grants no data rights.
