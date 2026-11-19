@@ -58,6 +58,16 @@ matches <- read_csv("matches.csv.gz")
 points  <- read_csv("points_sample_2026-06.csv.gz")
 ```
 
+## Re-run the published findings
+
+[`notebooks/findings_retest.ipynb`](notebooks/findings_retest.ipynb) re-runs the four tests of
+[Tennis findings, re-tested](https://blog.livetennisapi.com/tennis-findings-retested) on the public
+sample. It fetches the sample through the concept DOI and imports the page's analysis code. Then it
+sets each result beside the full record's. It needs Python 3.10 or newer and nothing to install.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/livetennisapi/livetennisapi-data/blob/main/notebooks/findings_retest.ipynb)
+[![Launch on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/livetennisapi/livetennisapi-data/HEAD?labpath=notebooks%2Ffindings_retest.ipynb)
+
 ## Access & conditions
 
 Email **research@livetennisapi.com** from an institutional address (students: ORCID or a
