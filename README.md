@@ -19,11 +19,10 @@ clone but knowledge.
     timestamps: **22,031 matches / 3,184,514 point states**, from 2025-10-12 (full
     volume from February 2026), every tier down to ITF — where public point-level data
     has effectively never existed.
-  - `reconstructed` — expanded post-match from a third-party feed, no capture
-    timestamps: covers 2023–2025 and part of 2026. Not in public files; per-request
+  - `reconstructed`: rebuilt after the match, with no capture timestamps. It covers 2023
+    to 2025 and part of 2026. It is not in the public files and is shared per request
     under the programme.
-- **Players** — 32,678 with stable IDs, country, birth date, handedness, and a
-  `sackmann_id` crosswalk (see below).
+- 32,678 players with stable IDs, tour, country, birth date and handedness.
 
 Known limitations are stated plainly in [the data dictionary](DATA_DICTIONARY.md) and on
 the dataset page: the observed layer starts late 2025; tapes may start mid-match or end
@@ -58,21 +57,6 @@ library(readr)
 matches <- read_csv("matches.csv.gz")
 points  <- read_csv("points_sample_2026-06.csv.gz")
 ```
-
-## Joining with Jeff Sackmann's open datasets
-
-For pre-2023 results use [Jeff Sackmann's datasets](https://github.com/JeffSackmann)
-(`tennis_atp`, `tennis_wta`, the Match Charting Project) — the standard research corpora.
-Our `players.csv` carries a `sackmann_id` column mapping our stable player IDs to his,
-so the two ecosystems join cleanly:
-
-```python
-joined = players.dropna(subset=["sackmann_id"])
-# then join sackmann's atp_players.csv on player_id == sackmann_id
-```
-
-This dataset is a complement for the 2023-onward, lower-tier, and capture-timestamped
-questions the open archives don't cover — not a replacement for them.
 
 ## Access & conditions
 
